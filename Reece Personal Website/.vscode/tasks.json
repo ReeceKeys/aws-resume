@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "command": "explorer",    
+    "windows": {
+        "command": "explorer.exe"
+    },
+    "args": [
+        "index.html"
+    ],
+    "tasks": [
+        {
+            "type": "cmake",
+            "label": "CMake: build",
+            "command": "build",
+            "targets": [
+                "[N/A - Select Kit]"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "CMake template build task"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: cpp.exe build active file",
+            "command": "C:\\MinGW\\bin\\cpp.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: C:\\MinGW\\bin\\cpp.exe"
+        }
+    ]
+}
