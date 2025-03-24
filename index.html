@@ -11,21 +11,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <div class="name_wrapper">
-        <div class="name_container">
-            <h1 class="name_header">Reece Harris</h1>
-            <h2 class="information">Email: rmharris333@yahoo.com<br>
-            Phone: (831)454-6890
-            </h2>
+
+    <div class="bar">
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-btn" onclick="toggleMenu()">×</button>
+            <a href="mailto:rmharris333@yahoo.com">Email</a>
+            <a href="tel:(831)454-6890">Phone</a>
         </div>
     </div>
-
-    <div class="space_container"></div>
-
-    <div class="sub_wrapper">
-        <h2 class="typed">I enjoy <span id="element"></span></h2>
+    
+    <div class="header">
+        <div class="left">
+            <h1 class="name">Reece Harris</h1>
+            <h2 class="information">Email: rmharris333@yahoo.com<br>Phone: (831)454-6890</h2>
+            <h2 class="typed">I enjoy <span id="element"></span></h2>
+        </div>
+        <div class="right">
+            <img src="your-image.jpg" alt="Profile Image">
+        </div>
     </div>
-    <div class="space_container"></div>
+    
+    
+
+
+
+
+
     <div class="bio_container">
             <div id="main_body">
                 <p>Although programming is difficult at times,
